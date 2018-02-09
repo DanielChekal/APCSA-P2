@@ -6,40 +6,48 @@
 
 import static java.lang.System.*;
 
+import java.util.Scanner;
+
 public class Name
 {
 	private String name;
-
+	String F,L;
 	public Name()
 	{
-
 
 	}
 
 	public Name(String s)
 	{
-
-
+		//F = s.substring(0,3);
+		
 	}
 
    public void setName(String s)
-   {
-
-
+   {	   
    }
 
 	public String getFirst()
 	{
-		return "";
+		
+		Scanner test = new Scanner(System.in);
+		System.out.print("Enter First Name :: ");
+		F = test.nextLine();
+		return F;
+		
 	}
 
 	public String getLast()
 	{
-		return "";
+		Scanner test = new Scanner(System.in);
+		System.out.print("Enter Last Name :: ");
+		L = test.nextLine();
+		return L;
 	}
 
  	public String toString()
  	{
- 		return "";
+ 		name = F + " "+L;
+ 		return name;
 	}
 }

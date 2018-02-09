@@ -3,8 +3,7 @@
 //Date -
 //Class -
 //Lab  -
-import java.util.Scanner;
-import java.lang.Math;
+
 public class Circle
 {
 	private double radius;
@@ -16,11 +15,9 @@ public class Circle
 
 	public void calculateArea( )
 	{
-		
 	}
 
 	public void print( )
 	{
-		System.out.println("The area is :: ");
 	}
 }

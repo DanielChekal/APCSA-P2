@@ -12,10 +12,9 @@ public class Lab03c
 {
 	public static void main( String[] args )
    {
-   	//add test cases
    	
-   	
-		
-		
+		Quadratic test = new Quadratic();
+		test.calcRoots();
+		test.print();	
 	}
 }

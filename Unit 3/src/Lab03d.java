@@ -12,10 +12,10 @@ public class Lab03d
 {
 	public static void main( String[] args )
 	{
-		//add test cases
 		
-		
-		
+		Distance test = new Distance();
+		test.calcDistance();
+		test.print();
 		
 			
 	}
