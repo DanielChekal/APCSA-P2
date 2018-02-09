@@ -1,0 +1,20 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class -
+//Lab  -
+import java.util.Scanner;
+public class Lab02e
+{
+	public static void main( String[] args )
+   {
+		//add test cases
+		System.out.println("Radius :: ");
+		Scanner r = new Scanner(System.in);
+		double num = r.nextInt();
+		System.out.println(num);
+		//Circle radius = new Circle(r);
+		
+		
+	}
+}
