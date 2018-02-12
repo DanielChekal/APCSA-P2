@@ -5,7 +5,7 @@
 //Lab  -
 
 import static java.lang.System.*;
-import java.util.Scanner;
+
 public class StringChecker
 {
 	private String word;
@@ -13,34 +13,42 @@ public class StringChecker
 	public StringChecker()
 	{
 		
-		
+				
 	}
 
 	public StringChecker(String s)
 	{
-		
+
 		
 	}
 
    public void setString(String s)
    {
-   	word=s;
+	   word=s;
+
+	   
    }
 
 	public boolean findLetter(char c)
 	{
-		
-		
-		
-		return false;
+		int index;
+		String s = word;
+		index = s.indexOf('c');
+		if (index >=0)
+			return true;		
+		else
+			return false;
 	}
 
 	public boolean findSubString(String s)
 	{
-		
-		
-		
-		return false;
+		int index;
+		String find = word;
+		index = find.indexOf(s);
+		if (index >=0)
+			return true;		
+		else
+			return false;
 	}
 
  	public String toString()
