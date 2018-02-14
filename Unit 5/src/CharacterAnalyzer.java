@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -75,7 +75,7 @@ public class CharacterAnalyzer
 		else if (isNumber() == true)
 			return getChar() + " is a number. ASCII == "+ getASCII() + "\n";
 		else
-			return getChar()+ " is not an uppercase character, a lowercase character, or a number. ASCII == "+ getASCII() + "\n";
+			return getChar()+ " is not an uppercase character, a lowercase character, or a number. \n";
 
 
 
