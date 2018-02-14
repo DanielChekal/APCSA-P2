@@ -20,23 +20,24 @@ public class CharacterAnalyzer
 	public CharacterAnalyzer(char c)
 	{
 
-
+		theChar = c;
 	}
 
 	public void setChar(char c)
 	{
-
+		
 
 	}
 
 	public char getChar()
 	{
-		return '-';
+		return theChar;
 	}
 
 	public boolean isUpper( )
 	{
-
+		if ((int) theChar > 64 && (int) theChar <91)
+			return true;
 
 
 		return false;
@@ -44,7 +45,8 @@ public class CharacterAnalyzer
 
 	public boolean isLower( )
 	{
-
+		if ((int) theChar >96 && (int) theChar<123)
+			return true;
 
 
 		return false;
@@ -52,7 +54,8 @@ public class CharacterAnalyzer
 	
 	public boolean isNumber( )
 	{
-
+		if ((int) theChar >47 && (int) theChar<58)
+			return true;
 
 
 		return false;
@@ -60,15 +63,21 @@ public class CharacterAnalyzer
 
 	public int getASCII( )
 	{
-		return 0;
+		return (int) theChar;
 	}
 
 	public String toString()
 	{
+		if (isUpper() == true)
+			return getChar() + " is an uppercase character. ASCII == " + getASCII() + "\n";
+		else if (isLower() == true)
+			return getChar() + " is a lowercase character. ASCII == "+ getASCII() + "\n";
+		else if (isNumber() == true)
+			return getChar() + " is a number. ASCII == "+ getASCII() + "\n";
+		else
+			return getChar()+ " is not an uppercase character, a lowercase character, or a number. ASCII == "+ getASCII() + "\n";
 
 
 
-
-		return ""+getChar() + " is a lowercase character. ASCII == " + getASCII() + "\n";	  
 	}
 }
