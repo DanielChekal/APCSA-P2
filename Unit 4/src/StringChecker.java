@@ -13,12 +13,12 @@ public class StringChecker
 	public StringChecker()
 	{
 		
-				
+		
 	}
 
 	public StringChecker(String s)
 	{
-
+		word = s;
 		
 	}
 
@@ -26,33 +26,29 @@ public class StringChecker
    {
 	   word=s;
 
-	   
    }
 
 	public boolean findLetter(char c)
 	{
-		int index;
-		String s = word;
-		index = s.indexOf('c');
-		if (index >=0)
-			return true;		
-		else
-			return false;
+		for (int i = 0; i < word.length() - 1; i++)
+		{
+			if (word.charAt(i)==c)
+				return true;
+		}
+		return false;
 	}
 
 	public boolean findSubString(String s)
 	{
-		int index;
-		String find = word;
-		index = find.indexOf(s);
-		if (index >=0)
-			return true;		
-		else
-			return false;
+		for (int i = 0; i < word.length() - 1 - s.length(); i ++)
+			if (word.substring(i,  i + s.length()).equals(s))
+				return true;
+		return false;
 	}
 
  	public String toString()
  	{
+ 		out.println(word);
  		return "\n\n";
 	}
 }

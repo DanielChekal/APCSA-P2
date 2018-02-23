@@ -1,4 +1,4 @@
-//Â© A+ Computer Science  -  www.apluscompsci.com
+//© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -77,7 +77,7 @@ public class CharacterAnalyzer
 		else
 			return getChar()+ " is not an uppercase character, a lowercase character, or a number. \n";
 
-
+//asdfsadf
 
 	}
 }

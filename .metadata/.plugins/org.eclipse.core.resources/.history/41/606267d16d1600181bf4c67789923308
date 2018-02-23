@@ -1,0 +1,61 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class -
+//Lab  -
+
+import static java.lang.System.*;
+import java.util.Scanner;
+
+
+public class LetterRemover
+{
+   private String sentence;
+   private char lookFor;
+
+	public LetterRemover()
+	{
+		Scanner test = new Scanner(System.in);
+		System.out.println("What letter should I remove?");
+		char c = test.next().charAt(0);
+		
+	}
+
+	//public GetString()
+	{
+		Scanner test = new Scanner(System.in);
+		System.out.println("Give me a sentence :: ");
+		String s = test.nextLine();
+	}
+	
+	
+	
+	public void setRemover(String s, char rem)
+	{
+		sentence = s;
+		lookFor = rem;
+	}
+
+	public String removeLetters()
+	{
+		String cleaned=sentence;
+
+		for (int i=0; i<sentence.length(); i++)
+		{
+			if (sentence.charAt(i) == lookFor)
+			{
+				cleaned = sentence.substring(0, i) + sentence.substring(i,sentence.length());		
+			}
+
+		}
+
+
+
+		return cleaned;
+	}
+
+	public String toString()
+	{
+		return sentence + " - letter to remove " + lookFor;
+	}
+}

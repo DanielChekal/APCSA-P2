@@ -37,6 +37,9 @@ public class Lab05d
 		
 		
 		
-//asdhfjklashdjkfdas
+		int i = 3;
+		if (1<10)
+			out.println("hello");
+		out.println("goodbue");
 	}
 }
