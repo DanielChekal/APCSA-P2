@@ -4,10 +4,10 @@
 //Class -
 //Lab  -
 
-public class Lab02e
+public class Lab14d
 {
-	public static void main( String[] args )
-   {
+	public static void main( String args[] )
+	{
 		//add test cases
 		
 		
