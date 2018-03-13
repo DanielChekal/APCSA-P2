@@ -1,7 +1,7 @@
 /**
  * This is a class that tests the Deck class using assert statements.
  */
-public class DeckTester {
+public class DeckTester  implements Comparable<Deck> {
 
 	/**
 	 * The main method in this class checks the Deck operations for consistency
