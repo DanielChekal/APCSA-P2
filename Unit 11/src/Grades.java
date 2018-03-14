@@ -69,7 +69,11 @@ public class Grades {
 		for (int i = 0; i < grades.size(); i++) {
 			output += grades.get(i) + " ";
 		}
-		
+		/*
+		 * output += "\n Sum is " + getSum() + "\n Number of grades : " +
+		 * grades.length + "\n Low grade : " + getLowGrade() +
+		 * "\n High grade : " + getHighGrade();
+		 */
 
 		return output;
 	}
