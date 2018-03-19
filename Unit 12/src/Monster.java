@@ -71,8 +71,7 @@ public class Monster implements Comparable {
 
 	public boolean equals(Object obj) {
 		Monster second = (Monster) obj;
-		if (this.getHeight() == second.getHeight() && this.getWeight() == second.getWeight()
-				&& this.getAge() == second.getAge())
+		if (this.getHeight() == second.getHeight() && this.getWeight() == second.getWeight() && this.getAge() == second.getAge())
 			return true;
 		return false;
 	}

@@ -9,7 +9,6 @@ public class Wordd implements Comparable<Wordd> {
 
 	public Wordd(String s) {
 		word = s;
-
 	}
 
 	private int numVowels() {

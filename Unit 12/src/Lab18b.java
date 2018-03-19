@@ -44,4 +44,3 @@ public class Lab18b
 		out.println(mTwo.compareTo(mOne));
 	}
 }
-

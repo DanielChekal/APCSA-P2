@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Lab18e {
 	public static void main(String args[]) throws IOException {
 		ArrayList<Wordd> words = new ArrayList<>();
-		Scanner file = new Scanner(new File("/Users/fireguy/Documents/workspace/Unit 12 Asignments/src/lab18e.dat"));
+		Scanner file = new Scanner(new File("C:\\Users\\chekald3384\\Desktop\\APCSA-P2\\Unit 12\\src\\lab18e.dat"));
 		int length = file.nextInt();
 		file.nextLine();
 		for (int i = 0; i < length; i++) {

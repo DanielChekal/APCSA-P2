@@ -13,7 +13,7 @@ public class Lab18d {
 	public static void main(String args[]) throws IOException {
 		ArrayList<Word> words = new ArrayList<>();
 
-		Scanner file = new Scanner(new File("/Users/fireguy/Documents/workspace/Unit 12 Asignments/src/lab18d.dat"));
+		Scanner file = new Scanner(new File("C:\\Users\\chekald3384\\Desktop\\APCSA-P2\\Unit 12\\src\\lab18d.dat"));
 		int size = file.nextInt();
 		file.nextLine();
 
