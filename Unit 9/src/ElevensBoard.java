@@ -5,6 +5,12 @@ import java.util.List;
  */
 public class ElevensBoard extends Board {
 
+	public static void main(String[] args){
+		System.out.println("Daniel Chekal");
+		System.out.println("Period 2");
+		System.out.println("3/23/2018");
+		System.out.println("CA-SU-F101-28");
+	}
 	/**
 	 * The size (number of cards) on the board.
 	 */
@@ -52,13 +58,12 @@ public class ElevensBoard extends Board {
 	@Override
 	public boolean isLegal(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
-		if (selectedCards.size() == 2) {
+		if (selectedCards.size() == 3) {
 			return containsPairSum11(selectedCards);
-		} else if (selectedCards.size() == 3) {
+		} else if (selectedCards.size() == 2) {
 			return containsJQK(selectedCards);
 		} else
 			return false;
-
 	}
 
 	/**
@@ -90,12 +95,13 @@ public class ElevensBoard extends Board {
 	 */
 	private boolean containsPairSum11(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
-		if (selectedCards.size() < 2)
+		if (selectedCards.size() < 3)
 			return false;
 		for (int i = 0; i < selectedCards.size(); i++)
 			for (int j = i + 1; j < selectedCards.size(); j++)
-				if (cardAt(selectedCards.get(i)).pointValue() + cardAt(selectedCards.get(j)).pointValue() == 11)
-					return true;
+				for (int m = j + 1; m < selectedCards.size(); m++)
+					if (cardAt(selectedCards.get(i)).pointValue() + cardAt(selectedCards.get(j)).pointValue() + cardAt(selectedCards.get(m)).pointValue()== 11)
+						return true;
 		return false;
 	}
 
@@ -114,18 +120,18 @@ public class ElevensBoard extends Board {
 		boolean c = false;
 		for (Integer n : list) {
 			int n2 = n;
-			if (this.cardAt(n2).rank().equals("jack")) {
+			if (this.cardAt(n2).rank().equals("jack") && this.cardAt(n2+1).rank().equals("jack")) {
 				a = true;
 				continue;
 			}
-			if (this.cardAt(n2).rank().equals("queen")) {
+			if (this.cardAt(n2).rank().equals("queen") && this.cardAt(n2+1).rank().equals("queen")) {
 				b = true;
 				continue;
 			}
-			if (!this.cardAt(n2).rank().equals("king"))
+			if (!this.cardAt(n2).rank().equals("king")&& this.cardAt(n2-1).rank().equals("king"))
 				continue;
 			c = true;
 		}
-		return a && b && c;
+		return a || b || c;
 	}
 }
