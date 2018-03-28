@@ -17,5 +17,3 @@ public class Lab22f
 		QuickSort.quickSort(new Comparable[]{68,66,11,2,42,31});
 	}
 }
-
-
