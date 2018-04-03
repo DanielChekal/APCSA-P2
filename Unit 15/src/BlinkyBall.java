@@ -43,6 +43,5 @@ class BlinkyBall extends Ball {
 
 	public void moveAndDraw(Graphics window) {
 		super.moveAndDraw(window);
-
 	}
 }

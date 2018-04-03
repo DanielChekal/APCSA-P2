@@ -158,16 +158,16 @@ public class Pong extends Canvas implements KeyListener, Runnable {
 
 	public void keyPressed(KeyEvent e) {
 		switch (toUpperCase(e.getKeyChar())) {
-		case 'Q':
+		case 'W':
 			keys[0] = true;
 			break;
-		case 'A':
+		case 'Z':
 			keys[1] = true;
 			break;
-		case 'P':
+		case 'I':
 			keys[2] = true;
 			break;
-		case 'L':
+		case 'M':
 			keys[3] = true;
 			break;
 		}
@@ -175,17 +175,17 @@ public class Pong extends Canvas implements KeyListener, Runnable {
 
 	public void keyReleased(KeyEvent e) {
 		switch (toUpperCase(e.getKeyChar())) {
-		case 'Q':
-			keys[0] = true;
+		case 'W':
+			keys[0] = false;
 			break;
-		case 'A':
-			keys[1] = true;
+		case 'Z':
+			keys[1] = false;
 			break;
-		case 'P':
-			keys[2] = true;
+		case 'I':
+			keys[2] = false;
 			break;
-		case 'L':
-			keys[3] = true;
+		case 'M':
+			keys[3] = false;
 			break;
 		}
 	}
@@ -202,4 +202,7 @@ public class Pong extends Canvas implements KeyListener, Runnable {
 		} catch (Exception e) {
 		}
 	}
+	public void BlinkyBall(){
+		   
+	   }
 }
