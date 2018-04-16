@@ -413,8 +413,8 @@ public class Picture extends SimplePicture {
 
 	/** Method to create a collage of several pictures */
 	public void createCollage() {
-		Picture flower1 = new Picture("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 16/images/flower1.jpg");
-		Picture flower2 = new Picture("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 16/images/flower2.jpg");
+		Picture flower1 = new Picture("/Users/fireguy/Documents/workspace/Unit 16/src/images/flower1.jpg");
+		Picture flower2 = new Picture("/Users/fireguy/Documents/workspace/Unit 16/src/images/flower2.jpg");
 		this.copy(flower1, 0, 0);
 		this.copy(flower2, 100, 0);
 		this.copy(flower1, 200, 0);
@@ -424,7 +424,7 @@ public class Picture extends SimplePicture {
 		this.copy(flower1, 400, 0);
 		this.copy(flower2, 500, 0);
 		this.mirrorVertical();
-		this.write("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 16/images/640x480.jpg");
+		this.write("/Users/fireguy/Documents/workspace/Unit 16/src/images/640x480.jpg");
 	}
 
 	/**
@@ -455,7 +455,7 @@ public class Picture extends SimplePicture {
 	 * Main method for testing - each class in Java can have a main method
 	 */
 	public static void main(String[] args) {
-		Picture beach = new Picture("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 16/images/beach.jpg");
+		Picture beach = new Picture("/Users/fireguy/Documents/workspace/Unit 16/src/images/beach.jpg");
 		beach.explore();
 		beach.zeroBlue();
 		beach.explore();

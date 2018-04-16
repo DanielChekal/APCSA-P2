@@ -150,13 +150,13 @@ public class PictureTester {
 		// testKeepOnlyGreen();
 		// testNegate();
 		// testGrayscale();
-		// testFixUnderwater();
+		 testFixUnderwater();
 		// testMirrorVertical();
 		// testMirrorTemple();
 		// testMirrorArms();
 		// testMirrorGull();
 		// testMirrorDiagonal();
-		 testCollage();
+		// testCollage();
 		// testCopy();
 		// testEdgeDetection();
 		// testBlur();
