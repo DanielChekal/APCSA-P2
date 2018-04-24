@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
  * 
  * @author Barbara Ericson ericson@cc.gatech.edu
  */
+
 public class Picture extends SimplePicture {
 	///////////////////// constructors //////////////////////////////////
 
@@ -161,13 +162,13 @@ public class Picture extends SimplePicture {
 		}
 	}
 
-	public void blur(int x, int y, int width, int length) {
+	public void blur(int x, int y, int width, int h) {
 		Pixel[][] pixels = this.getPixels2D();
 		int AB = 0;
 		int AG = 0;
 		int AR = 0;
 		for (int row = x + 1; row < x + width - 1; row++) {
-			for (int col = y + 1; col < y + length - 1; col++) {
+			for (int col = y + 1; col < y + h - 1; col++) {
 				AB = (pixels[row - 1][col - 1].getBlue() + pixels[row][col - 1].getBlue()
 						+ pixels[row + 1][col - 1].getBlue() + pixels[row - 1][col].getBlue()
 						+ pixels[row + 1][col].getBlue() + pixels[row - 1][col + 1].getBlue()
@@ -456,9 +457,10 @@ public class Picture extends SimplePicture {
 	 */
 	public static void main(String[] args) {
 		Picture beach = new Picture("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 16/images/beach.jpg");
-		beach.explore();
-		beach.zeroBlue();
-		beach.explore();
+		System.out.println("Daniel Chekal");
+		System.out.println("Period 2");
+		System.out.println("24 April 2018");
+		System.out.println("Computer number 27");
 	}
 
 } // this } is the end of class Picture, put all new methods before this
