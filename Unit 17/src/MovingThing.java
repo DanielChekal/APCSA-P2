@@ -1,90 +1,71 @@
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
-//Class - 
+//Class -
 //Lab  -
 
-import java.awt.Color;
 import java.awt.Graphics;
 
-public abstract class MovingThing implements Moveable
-{
+public abstract class MovingThing implements Locatable {
 	private int xPos;
 	private int yPos;
-	private int width;
-	private int height;
 
-	public MovingThing()
-	{
-		xPos = 10;
-		yPos = 10;
-		width = 10;
-		height = 10;
+	public MovingThing() {
+		// add more code
+		this(0, 0);
 	}
 
-	public MovingThing(int x, int y)
-	{
+	public MovingThing(int x, int y) {
+		// add more code
 		xPos = x;
 		yPos = y;
-		width = 10;
-		height = 10;
 	}
 
-	public MovingThing(int x, int y, int w, int h)
-	{
-		//add code here
+	public void setPos(int x, int y) {
+		// add more code
+		xPos = x;
+		yPos = y;
 	}
 
-	public void setPos( int x, int y)
-	{
-		//add code here
+	public void setX(int x) {
+		// add more code
+		xPos = x;
 	}
 
-	public void setX(int x)
-	{
-		//add code here
+	public void setY(int y) {
+		// add more code
+		yPos = y;
 	}
 
-	public void setY(int y)
-	{
-		//add code here
+	public int getX() {
+		return xPos;
 	}
 
-	public int getX()
-	{
-		return 0;   //finish this method
+	public int getY() {
+		return yPos;
 	}
 
-	public int getY()
-	{
-		return 0;  //finish this method
-	}
+	public abstract void setSpeed(int s);
 
-	public void setWidth(int w)
-	{
-		//add code here
-	}
+	public abstract int getSpeed();
 
-	public void setHeight(int h)
-	{
-		//add code here
-	}
-
-	public int getWidth()
-	{
-		return 0;  //finish this method
-	}
-
-	public int getHeight()
-	{
-		return 0;  //finish this method
-	}
-
-	public abstract void move(String direction);
 	public abstract void draw(Graphics window);
 
-	public String toString()
-	{
-		return getX() + " " + getY() + " " + getWidth() + " " + getHeight();
+	public void move(String direction) {
+		if (direction.equals("LEFT")) {
+			setX(getX() - getSpeed());
+		} else if (direction.equals("RIGHT")) {
+			setX(getX() + getSpeed());
+		} else if (direction.equals("UP")) {
+			setY(getY() + getSpeed());
+		} else if (direction.equals("DOWN")) {
+			setY(getY() - getSpeed());
+		}
+
+		// add more code to complete the move method
+	}
+
+	public String toString() {
+		return xPos + " " + yPos + " ";
 	}
 }
