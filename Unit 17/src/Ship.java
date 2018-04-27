@@ -26,7 +26,7 @@ public class Ship extends MovingThing {
 		super(x, y);
 		speed = s;
 		try {
-			image = ImageIO.read(new File("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 17/src/ship.png"));
+			image = ImageIO.read(new File("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 17/src/ship.jpg"));
 		} catch (Exception e) {
 			System.out.println("Ship doesnt work!!!!");
 			// feel free to do something here

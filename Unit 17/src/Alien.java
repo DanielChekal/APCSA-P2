@@ -26,7 +26,7 @@ public class Alien extends MovingThing {
 		super(x, y);
 		speed = s;
 		try {
-			image = ImageIO.read(new File("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 17/src/alien.png"));
+			image = ImageIO.read(new File("C:/Users/chekald3384/Desktop/APCSA-P2/Unit 17/src/alien.JPG"));
 		} catch (Exception e) {
 			System.out.println("Alien broke go fix it!!!!!");
 			// feel free to do something here

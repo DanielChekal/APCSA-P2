@@ -23,9 +23,6 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable, Collida
 	private Alien alienOne;
 	private Alien alienTwo;
 
-	/*
-	 * uncomment once you are ready for this part
-	 */
 	private ArrayList<Alien> aliens;
 	private ArrayList<Ammo> shots;
 
