@@ -460,7 +460,7 @@ public class Picture extends SimplePicture {
 		System.out.println("Daniel Chekal");
 		System.out.println("Period 2");
 		System.out.println("24 April 2018");
-		System.out.println("Computer number 28");
+		System.out.println("Computer number 27");
 	}
 
 } // this } is the end of class Picture, put all new methods before this

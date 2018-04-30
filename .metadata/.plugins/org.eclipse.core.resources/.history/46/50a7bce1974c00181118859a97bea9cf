@@ -160,7 +160,7 @@ public class PictureTester {
 		// testCollage();
 		// testCopy();
 		// testEdgeDetection();
-		//testBlur(190,160,20,20,1);
+		testBlur(190,160,20,20,1);
 
 		// testEdgeDetection2();
 		// testChromakey();
