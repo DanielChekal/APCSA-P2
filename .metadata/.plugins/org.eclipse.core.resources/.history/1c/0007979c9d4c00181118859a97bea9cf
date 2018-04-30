@@ -37,7 +37,7 @@ public class Alien extends MovingThing {
 		// add code
 		speed = s;
 	}
-	
+
 	public int getSpeed() {
 		return speed;
 	}

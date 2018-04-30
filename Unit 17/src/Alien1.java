@@ -10,19 +10,19 @@ import java.io.File;
 
 import javax.imageio.ImageIO;
 
-public class Alien extends MovingThing {
+public class Alien1 extends MovingThing {
 	private int speed;
 	private Image image;
 
-	public Alien() {
+	public Alien1() {
 		this(0, 0, 0);
 	}
 
-	public Alien(int x, int y) {
+	public Alien1(int x, int y) {
 		this(x, y, 0);
 	}
 
-	public Alien(int x, int y, int s) {
+	public Alien1(int x, int y, int s) {
 		super(x, y);
 		speed = s;
 		try {
